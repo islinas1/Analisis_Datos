@@ -498,9 +498,7 @@ elif "POS-Tagging" in seccion:
 
 elif "N-gramas" in seccion:
     step_header("enlace", "Paso 5: N-gramas")
-    tab_bi, tab_tri, tab_nube = st.tabs([f"{icono('grafico','icon-inline-sm')} Bigramas",
-                                          f"{icono('grafico','icon-inline-sm')} Trigramas",
-                                          f"{icono('nube','icon-inline-sm')} Nubes de palabras"])
+    tab_bi, tab_tri, tab_nube = st.tabs(["Bigramas", "Trigramas", "Nubes de palabras"])
     with tab_bi:
         cols = st.columns(3)
         for i, nombre in enumerate(NOMBRES):
@@ -556,9 +554,7 @@ elif "Patrones" in seccion:
 
 elif "Conteo" in seccion:
     step_header("grafico", "Paso 7: Conteo de categorías gramaticales")
-    tab_b, tab_h, tab_r = st.tabs([f"{icono('grafico','icon-inline-sm')} Barras",
-                                    f"{icono('mapa','icon-inline-sm')} Heatmap",
-                                    f"{icono('target','icon-inline-sm')} Radar"])
+    tab_b, tab_h, tab_r = st.tabs(["Barras comparativas", "Heatmap", "Radar"])
     cats_i = ['NOUN', 'VERB', 'ADJ', 'ADV', 'PRON', 'ADP', 'DET']
     with tab_b:
         regs = [{'Presidente': datos[n]['corto'], 'Categoría': POS_ES[c], '%': datos[n]['categorias'].get(c,{}).get('porcentaje',0)}
