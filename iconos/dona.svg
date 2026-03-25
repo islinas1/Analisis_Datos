@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+<circle cx="32" cy="32" r="22" stroke="#2E86AB" stroke-width="8" stroke-dasharray="35 104" stroke-dashoffset="0"/>
+<circle cx="32" cy="32" r="22" stroke="#A23B72" stroke-width="8" stroke-dasharray="25 114" stroke-dashoffset="-35"/>
+<circle cx="32" cy="32" r="22" stroke="#F18F01" stroke-width="8" stroke-dasharray="20 119" stroke-dashoffset="-60"/>
+<circle cx="32" cy="32" r="22" stroke="#64ffda" stroke-width="8" stroke-dasharray="59 200" stroke-dashoffset="-80"/>
+</svg>
